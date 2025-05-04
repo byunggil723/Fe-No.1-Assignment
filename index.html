@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="./css/body.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <h3>Search for movies! 🎬</h3>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="영화 제목을 입력하세요">
+      <button id="searchBtn">검색</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="movieList" class="movie-list"></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="backToList" class="material-symbols-outlined">undo</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© Kakao Tech Campus: Fe_이병길</p>
+  </footer>
+
+  <script type="module" src="./js/ui.js"></script>
+</body>
+
+</html>

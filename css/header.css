@@ -1,0 +1,66 @@
+header {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 5% 0 5% 0;
+  /* padding은 auto 사용 불가 */
+  display: flex;
+  justify-content: center;
+  /* 가로 가운데 정렬 */
+  align-items: center;
+  /* 세로 가운데 정렬 */
+  flex-direction: column;
+  /* 아래로 쌓기 */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  /* 가로 가운데 정렬 */
+  align-items: center;
+  /* 세로 가운데 정렬 */
+  flex-direction: row;
+  /* 아래로 쌓기 */
+  width: 40%;
+  margin-top: 10px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+/* searchInput의 높이에 부모와 버튼의 높이가 자동적으로 맞춰지고 있음 */
+
+#searchBtn {
+  width: 10%;
+  height: 100%;
+  margin-left: 1%;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchBtn:hover {
+  background-color: #b00610;
+}
+
+#backToFavorites {
+  margin-top: 10px;
+  background-color: #444;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+#backToFavorites:hover {
+  background-color: #666;
+}
+
+.hidden {
+  display: none;
+}
